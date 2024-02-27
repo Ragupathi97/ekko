@@ -1,0 +1,9 @@
+-Why were we adding fields to EKKO (based on requirement or PoC/test?): SMME0004 related requirement to add custom fields 
+-How were we doing the addition: Fields are added using custom Fiori App. One of added field is User ID and related requirement exist to display User Name next to User ID as in image below (without appending User Name field in EKKO), which has to be done using SE11 and the issue occurred doing the same
+ 
+-How were we logged off during activation (Done intentionally or system log you off?): SE11 change was done on foreground, took long and system automatically logged off developer after 30 mins or so. 
+Logged back in to check, re-ran activation in background, field created but EKKO data was lost
+-Current state: Added fields are still there already. Adding User Name to GUI not. Will talk to function side if User Name is still needed
+-How did we act after things went wrong Reported to Nabarko/Priyam(Sat), Cloud/Arch Mitul (Sunday evening), Tanaka-san (Monday morning)
+-Preventive measure(s) Above mentioned change via SE11 was done on foreground. Should have done in background even though not expecting it to take longer 30 mins
+
